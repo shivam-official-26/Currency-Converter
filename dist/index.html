@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body
+    class="bg-[#061a40] flex justify-center items-center w-[100%] h-[100vh] overflow-hidden font-laila"
+  >
+    <div
+      id="container"
+      class="bg-[#e1edfa] h-[90%] w-[22rem] md:w-[750px] md:h-[30rem] rounded-xl flex items-center justify-evenly flex-col absolute top-[2rem] md:fixed md:top-4"
+    >
+      <header class="text-center first-letter">
+        <h1 class="font-laila md:text-4xl text-3xl font-semibold p-2">
+          Currency Converter
+        </h1>
+        <p class="text-sm font-medium p-2">
+          A currency converter is a valuable tool for individuals dealing with
+          overseas clients or travelling to foreign countries who need to know
+          the value of their currency against the local currency.
+        </p>
+      </header>
+      <main class="flex flex-col items-center w-auto gap-5">
+        <div
+          id="amount"
+          class="md:h-6 md:w-auto h-auto w-[20rem] md:p-4 p-2 rounded-md gap-3 flex bg-[#b9d6f2] items-center justify-evenly"
+        >
+          <h2 class="font-medium text-md text-center">Amount TO Convert</h2>
+          <input
+            type="number"
+            value="1"
+            class="font-medium text-md text-center bg-[#e6eef6]"
+            id="inputNumber"
+          />
+        </div>
+        <div
+          id="dropdown"
+          class="flex items-center md:justify-evenly md:flex-row flex-col md:h-[7rem] md:gap-10"
+        >
+          <div id="from" class="">
+            <h2 class="font-bold">From</h2>
+            <div class="select-container flex h-6 gap-4">
+              <img src="https://flagsapi.com/US/flat/64.png" alt="">
+              <select name="from" class="from bg-[#b9d6f2] w-[10rem]">
+    
+              </select>
+            </div>
+            
+          </div>
+          <div id="exchange" class="bg-[#b9d6f2] rounded-3xl p-2 mt-5 hover:bg-[#F3F4F6]">
+            <i
+              class="fa-solid fa-arrow-right-arrow-left text-3xl cursor-pointer"
+            ></i>
+          </div>
+          <div id="to" class="">
+            <h2 class="font-bold">To</h2>
+            <div class="select-container flex h-6 gap-4">
+              <img src="https://flagsapi.com/IN/flat/64.png" alt="">
+              <select name="to" id="to" class="to bg-[#b9d6f2] w-[10rem]">
+              
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <button id="convertBtn" class="md:w-52 w-36 mt-2 md:mt-0">Convert !</button>
+      </main>
+      <footer
+        class="md:w-[25rem] md:h-[7rem] min-w-[75%] h-28 p-4 bg-[#b9d6f2] rounded-md flex justify-around items-center font-bold"
+      >
+    <div id="left" class="flex gap-10">
+      <div class="fromFooter flex flex-col items-center gap-5">
+        <h1>USD</h1>
+        <p class="text-4xl">1</p>
+      </div>
+      <div class="equalto flex items-center text-xl">
+        <i class="fa-solid fa-equals"></i>
+      </div>
+      <div class="toFooter flex flex-col items-center gap-5">
+        <h1>INR</h1>
+        <p class="text-4xl">83</p>
+      </div>
+    </div>
+    </footer>
+    </div>
+
+
+    <script src="codes.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
