@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="custom.css" />
   </head>
   <body
-    class="bg-[#061a40] flex justify-center items-center w-[100%] h-[100vh] overflow-hidden font-laila"
+    class="bg-[#061a40] flex justify-center items-center w-[100%] h-[100vh] overflow-hidden font-laila overscroll-contain"
   >
     <div
       id="container"
@@ -51,14 +51,14 @@
           <div id="from" class="">
             <h2 class="font-bold">From</h2>
             <div class="select-container flex h-6 gap-4">
-              <img src="https://flagsapi.com/US/flat/64.png" alt="">
-              <select name="from" class="from bg-[#b9d6f2] w-[10rem]">
-    
-              </select>
+              <img src="https://flagsapi.com/US/flat/64.png" alt="" />
+              <select name="from" class="from bg-[#b9d6f2] w-[10rem]"></select>
             </div>
-            
           </div>
-          <div id="exchange" class="bg-[#b9d6f2] rounded-3xl p-2 mt-5 hover:bg-[#F3F4F6]">
+          <div
+            id="exchange"
+            class="bg-[#b9d6f2] rounded-3xl p-2 mt-5 hover:bg-[#F3F4F6] rotate-90 md:rotate-0"
+          >
             <i
               class="fa-solid fa-arrow-right-arrow-left text-3xl cursor-pointer"
             ></i>
@@ -66,35 +66,38 @@
           <div id="to" class="">
             <h2 class="font-bold">To</h2>
             <div class="select-container flex h-6 gap-4">
-              <img src="https://flagsapi.com/IN/flat/64.png" alt="">
-              <select name="to" id="to" class="to bg-[#b9d6f2] w-[10rem]">
-              
-              </select>
+              <img src="https://flagsapi.com/IN/flat/64.png" alt="" />
+              <select
+                name="to"
+                id="to"
+                class="to bg-[#b9d6f2] w-[10rem]"
+              ></select>
             </div>
           </div>
         </div>
 
-        <button id="convertBtn" class="md:w-52 w-36 mt-2 md:mt-0">Convert !</button>
+        <button id="convertBtn" class="md:w-52 w-36 mt-2 md:mt-0">
+          Convert !
+        </button>
       </main>
       <footer
         class="md:w-[25rem] md:h-[7rem] min-w-[75%] h-28 p-4 bg-[#b9d6f2] rounded-md flex justify-around items-center font-bold"
       >
-    <div id="left" class="flex gap-10">
-      <div class="fromFooter flex flex-col items-center gap-5">
-        <h1>USD</h1>
-        <p class="text-4xl">1</p>
-      </div>
-      <div class="equalto flex items-center text-xl">
-        <i class="fa-solid fa-equals"></i>
-      </div>
-      <div class="toFooter flex flex-col items-center gap-5">
-        <h1>INR</h1>
-        <p class="text-4xl">83</p>
-      </div>
+        <div id="left" class="flex gap-10">
+          <div class="fromFooter flex flex-col items-center gap-5">
+            <h1>USD</h1>
+            <p class="text-4xl">1</p>
+          </div>
+          <div class="equalto flex items-center text-xl">
+            <i class="fa-solid fa-equals"></i>
+          </div>
+          <div class="toFooter flex flex-col items-center gap-5">
+            <h1>INR</h1>
+            <p class="text-4xl">83</p>
+          </div>
+        </div>
+      </footer>
     </div>
-    </footer>
-    </div>
-
 
     <script src="codes.js"></script>
     <script src="script.js"></script>

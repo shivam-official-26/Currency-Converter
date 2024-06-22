@@ -678,6 +678,11 @@ video {
   min-width: 75%;
 }
 
+.rotate-90{
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -722,8 +727,28 @@ video {
   gap: 1.25rem;
 }
 
+.overflow-auto{
+  overflow: auto;
+}
+
 .overflow-hidden{
   overflow: hidden;
+}
+
+.overflow-clip{
+  overflow: clip;
+}
+
+.overflow-visible{
+  overflow: visible;
+}
+
+.overscroll-contain{
+  overscroll-behavior: contain;
+}
+
+.overscroll-y-auto{
+  overscroll-behavior-y: auto;
 }
 
 .rounded-3xl{
@@ -860,6 +885,11 @@ video {
     width: auto;
   }
 
+  .md\:rotate-0{
+    --tw-rotate: 0deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -872,8 +902,36 @@ video {
     gap: 2.5rem;
   }
 
+  .md\:overflow-auto{
+    overflow: auto;
+  }
+
+  .md\:overflow-hidden{
+    overflow: hidden;
+  }
+
+  .md\:overflow-scroll{
+    overflow: scroll;
+  }
+
+  .md\:overflow-x-auto{
+    overflow-x: auto;
+  }
+
+  .md\:overflow-x-scroll{
+    overflow-x: scroll;
+  }
+
+  .md\:overflow-y-scroll{
+    overflow-y: scroll;
+  }
+
   .md\:p-4{
     padding: 1rem;
+  }
+
+  .md\:font-laila{
+    font-family: Laila;
   }
 
   .md\:text-4xl{
